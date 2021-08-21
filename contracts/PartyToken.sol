@@ -4,7 +4,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 pragma solidity >=0.6.12;
 
-contract YAYToken is ERC20("YAY", "YAY"), Ownable {
+contract PartyToken is ERC20("PARTY", "PARTY"), Ownable {
     using SafeMath for uint256;
 
     uint256 public constant initialSupply = 110000000000000000000000000;
