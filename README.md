@@ -4,25 +4,28 @@
 
 # AVALANCHE
 
-Metadata of "yaytoken" was published successfully.
-contracts/YAYToken.sol :
-ipfs://QmZtFtuoz2dsKGems1LXW22s1T5AqKKUYywtnf4Cvw1eWy
-contracts/access/Ownable.sol :
-ipfs://QmPozCmBaHoYCp3dDshZd8Wg54n7uDpvH6XMxCnhEik9FE
-contracts/token/ERC20.sol :
-ipfs://QmakqE2XsHe6B2CeWLdnsr3WLgvvC4rMHbrh7ecpmX4Z84
-contracts/token/IERC20.sol :
-ipfs://QmNosM3yrnQPekRJPap1wwhcdTQUdQuCmpfnfEwQvyuCiw
-contracts/token/extensions/IERC20Metadata.sol :
-ipfs://QmS8KSxahitmgbYrsMFmwQwQguRn2Li1bcj9o881N6UEpL
-contracts/utils/Context.sol :
-ipfs://Qme61ahYQqCyYLhQmF4cyKe539E9f4HK1d9PrEb4MDKEtr
-contracts/utils/math/SafeMath.sol :
-ipfs://QmdKGECnDUns4TkVA6iFGhC9oHf5PdUAe9SADVfSw1UCHM
-metadata.json :
-ipfs://QmckZd5UdAjTZj92H97nHE6CV9f6xnR9mm8BWgdtnZeu4C
+Replacing 'PartyToken'
 
-YAY ADDRESS: 0x15957be9802B50c6D66f58a99A2a3d73F5aaf615
+---
+
+- transaction hash: 0x76ee3c3d78f633372a45b5c2a14bbc992e9d18d2d2db77995f3e3e6f274c63d6
+- Blocks: 6 Seconds: 8
+- contract address: 0x69A61f38Df59CBB51962E69C54D39184E21C27Ec
+- block number: 3181006
+- block timestamp: 1629570619
+- account: 0x3b73F15142945f260148aDa3Db15b0657D12831C
+- balance: 22.487918297009082222
+- gas used: 1163271 (0x11c007)
+- gas price: 225 gwei
+- value sent: 0 ETH
+- total cost: 0.261735975 ETH
+
+- Saving migration to chain.
+- Saving artifacts
+
+---
+
+- Total cost: 0.261735975 ETH
 
 ---
 
