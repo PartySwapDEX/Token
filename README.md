@@ -51,3 +51,21 @@ Deploying 'PartyToken'
 - Saving artifacts
   ***
 - Total cost: 0.261735975 ETH
+
+## V2
+
+Deploying 'PartyTokenV2'
+
+---
+
+    - transaction hash:    0x31176785561ffecaf829e900e64c51060933eb1d73c3e5750b9e311427517744
+    - Blocks: 2            Seconds: 4
+    - contract address:    0x3EA3e5C6957581F3e70b2C33721D4E6844f60619
+    - block number:        4934486
+    - block timestamp:     1632796215
+    - account:             0x3b73F15142945f260148aDa3Db15b0657D12831C
+    - balance:             0.676261247443667869
+    - gas used:            1165798 (0x11c9e6)
+    - gas price:           225 gwei
+    - value sent:          0 ETH
+    - total cost:          0.26230455 ETH
