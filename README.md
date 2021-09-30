@@ -69,3 +69,32 @@ Deploying 'PartyTokenV2'
     - gas price:           225 gwei
     - value sent:          0 ETH
     - total cost:          0.26230455 ETH
+
+
+## V2 - FUJI
+
+Replacing 'PartyTokenV2'
+   ------------------------
+   - transaction hash:    0x4d9eccfdd0faa0ce65ca05d6707d404c1b54d95cd201d82f72db9dc4181f797f
+   - Blocks: 0            Seconds: 4
+   - contract address:    0x02048Fe5d5849Bfdb0FF2150c443c2a2A28fc0dE
+   - block number:        1862244
+   - block timestamp:     1632969775
+   - account:             0x3b73F15142945f260148aDa3Db15b0657D12831C
+   - balance:             14.930595738904306
+   - gas used:            1165798 (0x11c9e6)
+   - gas price:           225 gwei
+   - value sent:          0 ETH
+   - total cost:          0.26230455 ETH
+
+
+   - Saving migration to chain.
+   - Saving artifacts
+   -------------------------------------
+   - Total cost:          0.26230455 ETH
+
+
+Summary
+=======
+- Total deployments:   2
+- Final cost:          0.29919915 ETH
