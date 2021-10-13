@@ -1,6 +1,6 @@
 {
-  "name": "yay-token",
-  "version": "2.0.1",
+  "name": "@partyswap-libs/party-token",
+  "version": "2.0.2",
   "description": "",
   "main": "truffle-config.js",
   "directories": {
