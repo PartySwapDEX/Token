@@ -17,6 +17,8 @@ contract PartyTokenV2 is ERC20("PARTY V2", "PARTY"), Ownable {
     PartyToken public partyv1;
     address initialTotalSupplyHolder;
 
+    // address burnAddress = 0x000000000000000000000000000000000000dEaD;
+
     constructor(address initialTotalSupplyHolder_, PartyToken partyv1_) {
         uint256 chainId;
         assembly {
@@ -78,7 +80,7 @@ contract PartyTokenV2 is ERC20("PARTY V2", "PARTY"), Ownable {
     }
 
     function migrateOldTokens(uint256 amount) public {
-        partyv1.transfer(msg.sender, amount);
-        transferFrom(initialTotalSupplyHolder, msg.sender, amount);
+        partyv1.transferFrom(msg.sender, address(this), amount);
+        _transfer(initialTotalSupplyHolder, msg.sender, amount);
     }
 }
