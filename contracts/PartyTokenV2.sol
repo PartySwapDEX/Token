@@ -1,6 +1,7 @@
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "./PartyToken.sol";
 
 pragma solidity >=0.6.12;
 
@@ -13,8 +14,10 @@ contract PartyTokenV2 is ERC20("PARTY V2", "PARTY"), Ownable {
     bytes32 public constant PERMIT_TYPEHASH =
         0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
     mapping(address => uint256) public nonces;
+    PartyToken public partyv1;
+    address initialTotalSupplyHolder;
 
-    constructor(address initialTotalSupplyHolder) public {
+    constructor(address initialTotalSupplyHolder_, PartyToken partyv1_) {
         uint256 chainId;
         assembly {
             chainId := chainid()
@@ -30,7 +33,9 @@ contract PartyTokenV2 is ERC20("PARTY V2", "PARTY"), Ownable {
                 address(this)
             )
         );
-        _mint(initialTotalSupplyHolder, initialSupply);
+        _mint(initialTotalSupplyHolder_, initialSupply);
+        initialTotalSupplyHolder = initialTotalSupplyHolder_;
+        partyv1 = partyv1_;
     }
 
     // Burns the callers tokens
@@ -70,5 +75,10 @@ contract PartyTokenV2 is ERC20("PARTY V2", "PARTY"), Ownable {
             "PARTYV2: INVALID_SIGNATURE"
         );
         _approve(owner, spender, value);
+    }
+
+    function migrateOldTokens(uint256 amount) public {
+        partyv1.transfer(msg.sender, amount);
+        transferFrom(initialTotalSupplyHolder, msg.sender, amount);
     }
 }
