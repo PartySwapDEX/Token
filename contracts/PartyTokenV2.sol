@@ -13,8 +13,10 @@ contract PartyTokenV2 is ERC20("PARTY V2", "PARTY"), Ownable {
     bytes32 public constant PERMIT_TYPEHASH =
         0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9;
     mapping(address => uint256) public nonces;
+    
+    ERC20 public oldParty;
 
-    constructor(address initialTotalSupplyHolder) public {
+    constructor(address initialTotalSupplyHolder, address _oldToken) public {
         uint256 chainId;
         assembly {
             chainId := chainid()
@@ -31,6 +33,8 @@ contract PartyTokenV2 is ERC20("PARTY V2", "PARTY"), Ownable {
             )
         );
         _mint(initialTotalSupplyHolder, initialSupply);
+        
+        oldParty = ERC20(_oldToken);
     }
 
     // Burns the callers tokens
@@ -38,6 +42,16 @@ contract PartyTokenV2 is ERC20("PARTY V2", "PARTY"), Ownable {
         _burn(msg.sender, _amount);
     }
 
+    function _swapToNewParty(uint256 tokens, address from) internal {
+		oldParty.transferFrom(from, address(0x01), tokens);
+	    this.transfer(from, tokens);
+		emit Transfer(address(0), from, tokens);
+	}
+	
+	function swapToNewParty(uint256 tokens) public {
+		_swapToNewParty(tokens, msg.sender);
+	}
+	
     function permit(
         address owner,
         address spender,
