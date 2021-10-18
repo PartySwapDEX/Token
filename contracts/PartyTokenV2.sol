@@ -45,7 +45,7 @@ contract PartyTokenV2 is ERC20("PARTY V2", "PARTY"), Ownable {
 
     function _swapToNewParty(uint256 tokens, address from) internal {
         oldParty.transferFrom(from, address(0x01), tokens);
-        _transfer(initialTotalSupplyHolder, from, tokens);
+        transferFrom(initialTotalSupplyHolder, from, tokens);
         emit Transfer(address(0), from, tokens);
     }
 
