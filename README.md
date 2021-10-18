@@ -54,21 +54,28 @@ Deploying 'PartyToken'
 
 ## V2
 
-Deploying 'PartyTokenV2'
+Replacing 'PartyTokenV2'
 
 ---
 
-    - transaction hash:    0x31176785561ffecaf829e900e64c51060933eb1d73c3e5750b9e311427517744
-    - Blocks: 2            Seconds: 4
-    - contract address:    0x3EA3e5C6957581F3e70b2C33721D4E6844f60619
-    - block number:        4934486
-    - block timestamp:     1632796215
-    - account:             0x3b73F15142945f260148aDa3Db15b0657D12831C
-    - balance:             0.676261247443667869
-    - gas used:            1165798 (0x11c9e6)
-    - gas price:           225 gwei
-    - value sent:          0 ETH
-    - total cost:          0.26230455 ETH
+- transaction hash: 0x02327ac7ef0aa0522e98b5b9640459a215533f40eeb94cfadd02530d62cf8173
+- Blocks: 1 Seconds: 4
+- contract address: 0x82FdBB9aD231bee678D29c677aaCf69ae669aBDf
+- block number: 5794841
+- block timestamp: 1634568809
+- account: 0x3b73F15142945f260148aDa3Db15b0657D12831C
+- balance: 4.762146779847822239
+- gas used: 1294052 (0x13bee4)
+- gas price: 225 gwei
+- value sent: 0 ETH
+- total cost: 0.2911617 ETH
+
+- Saving migration to chain.
+- Saving artifacts
+
+---
+
+- Total cost: 0.2911617 ETH
 
 ## V2 - FUJI
 
@@ -78,7 +85,7 @@ Replacing 'PartyTokenV2'
 
 - transaction hash: 0x4d9eccfdd0faa0ce65ca05d6707d404c1b54d95cd201d82f72db9dc4181f797f
 - Blocks: 0 Seconds: 4
-- contract address: 0x7b3115Bcaf5170baEB4bB0c5867dCAf0c4518248
+- contract address: 0xCEAA8d36a189b3d8b867AD534D91A3Bdbd31686b
 - block number: 1862244
 - block timestamp: 1632969775
 - account: 0x3b73F15142945f260148aDa3Db15b0657D12831C
