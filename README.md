@@ -54,17 +54,13 @@ Deploying 'PartyToken'
 
 ## V2
 
-Replacing 'PartyTokenV2'
-
----
-
-- transaction hash: 0x02327ac7ef0aa0522e98b5b9640459a215533f40eeb94cfadd02530d62cf8173
-- Blocks: 1 Seconds: 4
-- contract address: 0x82FdBB9aD231bee678D29c677aaCf69ae669aBDf
-- block number: 5794841
-- block timestamp: 1634568809
+- transaction hash: 0x3ed1c9be0a5785c88532c7fe42c16c30ad30ddffafcc31c66852368a46f8824c
+- Blocks: 0 Seconds: 0
+- contract address: 0x25afD99fcB474D7C336A2971F26966da652a92bc
+- block number: 5794985
+- block timestamp: 1634569103
 - account: 0x3b73F15142945f260148aDa3Db15b0657D12831C
-- balance: 4.762146779847822239
+- balance: 4.417377479847822239
 - gas used: 1294052 (0x13bee4)
 - gas price: 225 gwei
 - value sent: 0 ETH
